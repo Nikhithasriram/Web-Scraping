@@ -1,8 +1,11 @@
 import csv
-
+# the scraped information in amazon contains the mobile name and its features together in a single line
+# in which the mobile name and info is either diffrenciated by '(' ',' '|'
+# this code is finding the the least of the three and dividing it based on that index 
 with open ('new_amazon.csv' , 'w') as f:
     w = csv.writer(f)
     w.writerow(["Name" , "info" , "price" , "Ratings" , "No. of reviews"])
+# finalamazon is where the information is present
 with open('finalamazon.csv' , 'r') as f:
     reader = list(csv.reader(f))[2:]
     with open ('new_amazon.csv' , 'a' , newline="") as w:
