@@ -1,4 +1,4 @@
-# Web-Scraping flipkart and amazon using python and selinium 
+# Web-Scraping using python and selinium 
 ## Web scraping amazon and flipkart for cost comparison using python
 
 ### About
